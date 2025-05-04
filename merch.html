@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <title>Fearless N Focused</title>
+</head>
+<body>
+    <button class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="nav-logo">
+    <img class="logo-top" src="images/logo-no-background.png" alt="logo">
+    <div class="nav-divider"></div>
+</div>
+<nav class="nav-menu">
+    <div class="nav-left">
+      <a href="index.html">HOME</a>
+    </div>
+    
+    <div class="nav-center">
+      <img src="images/logo-no-background.png" alt="logo" class="nav-logo-img">
+    </div>
+  
+    <div class="nav-right">
+      <a href="merch.html">MERCHANDISE COLLECTION</a>
+    </div>
+  </nav>
+    <div class="search-bar-container">
+    <div class="search-bar">
+        <input type="text" id="searchBar" placeholder="Search Your Merch!" onkeyup="filterItems()">
+    </div>
+</div>
+    <div class="logos">
+        <img src="images/logo.jpg" alt="logo">
+        <img src="images/logo.jpg" alt="logo">
+    </div>
+    <div class="hat-container">
+    <div class="hat-collection">
+        <div class="item-icon">
+            <img class="hat-icon2" src="images/hat-icon2.png" alt="hat icon">
+        <h2 class="hatc">HAT COLLECTION</h2>
+        <div class="item-divider"></div>
+        <p class="vary">Prices may vary upon any special design requests.</p>
+        <div class="image-column">
+            <div class="item-box" data-name="Green snapback with gold embroidery and brim">
+            <figure>
+            <img class="item" src="images/first-hat.png" alt="first hat">
+            <figcaption>
+                <p class="description">
+               Green snapback with gold embroidery and brim
+            </p>
+               <br>
+               <br>
+               <p class="hat-price">$20</p>
+               <br>
+               <br>
+               <h3>#1</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#1 - Green/Gold Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="item-box" data-name=" Navy blue snapback with teal embroidery">
+        <figure>
+            <img class="item" src="images/second-hat.png" alt="second hat">
+            <figcaption>
+                <p class="description">
+                Navy blue snapback with teal embroidery
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#2</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#2 - Navy/Teal Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+        </figure>
+    </div>
+    <div class="item-box" data-name="Red snapback with black embroidery">
+        <figure>
+            <img class="item" src="images/third-hat.png" alt="third hat">
+            <figcaption>
+                <p class="description">
+                Red snapback with black embroidery
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#3</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#3 - Red/Black Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+        </figure>
+    </div>
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <label for="popup-size">Size:</label>
+            <select id="popup-size">
+                <option value="">Select Size</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="2X">2X</option>
+                <option value="3X">3X</option>
+            </select>
+            <label for="popup-quantity">Quantity:</label>
+            <input type="number" id="popup-quantity" value="1" min="1" max="50">
+            <button id="confirm-selection">Confirm</button>
+        </div>
+    </div>
+    <div class="item-box" data-name="Black snapback with red embroidery">
+        <figure>
+            <img class="item" src="images/fourth-hat.png" alt="fourth hat">
+            <figcaption>
+                <p class="description">
+                Black snapback with red embroidery
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#4</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#4 - Black/Red Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+        </figure>
+    </div>
+    <div class="item-box" data-name="Black snapback with white embroidery">
+        <figure>
+            <img class="item" src="images/fifth-hat.png" alt="fifth hat">
+            <figcaption>
+                <p class="description">
+                Black snapback with white embroidery
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#5</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#5 - Black and White Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+        </figure>
+    </div>
+    <div class="item-box" data-name="Army green snapback with black embroidery and brim">
+        <figure>
+            <img class="item" src="images/eigth-hat.png" alt="eigth hat">
+            <figcaption>
+                <p class="description">
+                Army green snapback with black embroidery and brim
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#6</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#6 - Army Green/Black Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+        </figure>
+    </div>
+    <div class="item-box" data-name="Royal blue snapback with white embroidery">
+        <figure>
+            <img class="item" src="images/ninth-hat.png" alt="ninth hat">
+            <figcaption>
+                <p class="description">
+                Royal blue snapback with white embroidery
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#7</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#7 - Royal Blue/White Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+        </figure>
+    </div>
+    <div class="item-box" data-name="Camouflage snapback with white embroidery">
+        <figure>
+            <img class="item" src="images/twelveth.png" alt="twelveth hat">
+            <figcaption>
+                <p class="description">
+                Camouflage snapback with white embroidery
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#8</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#8 - Camouflage/White Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+        </figure>
+    </div>
+    <div class="item-box" data-name="Black snapback with green embroidery">
+        <figure>
+            <img class="item" src="images/sixteenth-hat.png" alt="sixteenth hat">
+            <figcaption>
+                <p class="description">
+                Black snapback with green embroidery
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#9</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#9 - Black/Green Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+        </figure>
+    </div>
+
+    <div class="image-column2"></div>
+    <div class="item-box" data-name="Jean blue snapback with black embroidery">
+        <figure>
+            <img class="item" src="images/seventh-hat.png" alt="seventh hat">
+            <figcaption>
+                <p class="description">
+                Jean blue snapback with black embroidery
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#10</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#10 - Jean Blue/Black Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+    <h2 class="alt">[ALTERNATIVE DESIGNS]</h2>
+    <div class="item-alt-divider"></div>
+
+
+    <div class="image-column3">
+        <div class="item-box-special" data-name="Green snapback with gold embroidery and white outline">
+            <figure>
+            <img class="item" src="images/fifteenth-hat.png" alt="fifteenth hat">
+            <figcaption>
+                <p class="description">
+                    Green snapback with gold embroidery and white outline 
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#11</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#11 - GG/Wht Out. Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+            </figure>
+        </div>
+        <div class="item-box" data-name="Red snapback with white embroidery and black outline ">
+            <figure>
+            <img class="item" src="images/eleventh-hat.png" alt="eleventh hat">
+            <figcaption>
+                <p class="description">
+                Red snapback with white embroidery and black outline 
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#12</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#12 - RW/Blk Out. Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+            </figure>
+        </div>
+        <div class="item-box-special" data-name="Black snapback with red embroidery and white outline">
+            <figure>
+            <img class="item" src="images/thirteenth-hat.png" alt="thirteenth hat">
+            <figcaption>
+                <p class="description">
+                Black snapback with red embroidery and white outline 
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#13</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#13 - BR/Wht Out. Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+            </figure>
+        </div>
+        <div class="item-box" data-name="Teal snapback with purple embroidery and white outline">
+            <figure>
+            <img class="item" src="images/fourteenth-hat.png" alt="fourteenth hat">
+            <figcaption>
+                <p class="description">
+                Teal snapback with purple embroidery and white outline 
+            </p>
+                <br>
+                <br>
+                <p class="hat-price">$20</p>
+                <br>
+               <br>
+               <h3>#14</h3>
+               <br>
+               <br>
+               <div class="request-add-buttons">
+                <button class="add-to-form-btn-no-padding" data-product="#14 - TP/Whte Out. Hat">Add For Later</button>
+               <a href="#request-form">
+               <button type="button" class="request-now">Request Now
+                    <div class="bouncing-arrow">&#x21e3;</div>
+               </button>
+            </a>
+        </div>
+             </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="sweat-logos">
+    <img src="images/logo.jpg" alt="logo">
+    <img src="images/logo.jpg" alt="logo">
+</div>
+
+
+
+
+
+<div class="sweatsuit-collection">
+    <div class="item-icon">
+        <img class="sweat-icon" src="images/sweatsuit-icon.png" alt="sweatsuit icon">
+        </div>
+    <h2 class="sweat-hatc">SWEATSUIT COLLECTION</h2>
+    <div class="sweat-item-divider"></div>
+    <div class="sweat-image-column">
+        <div class="item-box" data-name="Royal blue and white sweatsuit set, Navy blue and red sweatsuit set, Powder blue and white sweatsuit set">
+        <figure>
+        <img class="hoodieImage" class="item" src="images/Sweatsuit Set/blue-s.png" alt="blue hoodie">
+        <div class="blue-hoodies">
+        <button class="darkblue" onclick="switchImage('dark')"></button>
+        <button class="blue-red" onclick="switchImage('blue-red')"></button>
+        <button class="lightblue" onclick="switchImage('light')"></button>
+     </div>
+     <figcaption>
+        <p class="description" id="blueDescription">
+        Royal blue and white sweatsuit set ~
+        <br>
+        Soft and relaxed fit
+    </p>
+        <br>
+        <br>
+        <p class="sweat-price">$50</p>
+        <br>
+        <br>
+        <h3 id="blueNumber">#15</h3>
+        <br>
+        <br>
+        <div class="request-add-buttons">
+            <button id="blueButton" class="add-to-form-btn" data-product="#15 - Royal Blue and White S">Add For Later <div class="add-circles"></div></button>
+            <button id="navyButton" class="add-to-form-btn" data-product="#16 - Naby Blue and Red S">Add For Later <div id="navy-red-later" class="add-circles"></div></button>
+            <button id="powderButton" class="add-to-form-btn" data-product="#17 - Powder Blue and White S">Add For Later <div id="powder-blue-later"class="add-circles"></div></button>
+           <a href="#request-form">
+           <button type="button" class="request-now">Request Now
+                <div class="bouncing-arrow">&#x21e3;</div>
+           </button>
+        </a>
+    </div>
+     </figcaption>
+ </figure>
+</div>
+<div class="item-box" data-name="red hoodie">
+    <figure>
+    <img class="hoodieImagesRed" src="images/Sweatsuit Set/red-s.png" alt="red hoodie">
+    <div class="red-hoodies">
+        <button class="red" onclick="switchImage('red')"></button>
+        <button class="red-yellow" onclick="switchImage('red-yellow')"></button>
+        <button class="wine" onclick="switchImage('wine')"></button>
+    </div>
+    <figcaption>
+        <p class="description" id="redDescription">
+            Red and white sweatsuit set ~
+            <br>
+            Soft and relaxed fit
+        </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3 id="redNumber">#18</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button id="redButton" class="add-to-form-btn" data-product="#18 - Red and White S">Add For Later <div id="red-later" class="add-circles"></div></button>
+        <button id="rustButton" class="add-to-form-btn" data-product="#19 - Rust and Gold S">Add For Later <div id="rust-later" class="add-circles"></div></button>
+        <button id="maroonButton" class="add-to-form-btn" data-product="#20 - Maroon and White S">Add For Later <div id="maroon-later"class="add-circles"></div></button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="light grey hoodie">
+    <figure>
+    <img class="hoodieImagesGrey" src="images/Sweatsuit Set/lightgrey-s.png" alt="light grey hoodie">
+    <div class="grey-hoodies">
+        <button class="lightgrey" onclick="switchImage('lightgrey')"></button>
+        <button class="grey-black" onclick="switchImage('grey-black')"></button>
+    </div>
+    <figcaption>
+        <p class="description" id="greyDescription">
+            Grey and white sweatsuit set ~
+            <br>
+            Soft and relaxed fit
+    </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3 id="greyNumber">#21</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button id="greyButton" class="add-to-form-btn" data-product="#21 - Grey and White S">Add For Later <div id="grey-later" class="add-circles"></div></button>
+        <button id="greyBlackButton" class="add-to-form-btn" data-product="#22 - Grey and Black S">Add For Later <div id="grey-black-later" class="add-circles"></div></button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="purple hoodie">
+    <figure>
+    <img class="sweat-item" src="images/Sweatsuit Set/purple-s.png" alt="purple hoodie">
+    <figcaption>
+        <p class="description">
+            Purple and white sweatsuit set ~
+            <br>
+            Soft and relaxed fit
+    </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3>#23</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button class="add-to-form-btn-no-padding" data-product="#23 - Purple and White S">Add For Later </button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="yellow hoodie">
+    <figure>
+    <img class="hoodieImagesYellow" src="images/Sweatsuit Set/yellow-s.png" alt="yellow hoodie">
+    <div class="yellow-hoodies">
+        <button class="yellow" onclick="switchImage('yellow')"></button>
+        <button class="yellow-green" onclick="switchImage('yellow-green')"></button>
+    </div>
+    <figcaption>
+        <p class="description" id="yellowDescription">
+            Yellow and black sweatsuit set ~
+            <br>
+            Soft and relaxed fit</p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3 id="yellowNumber">#24</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button id="yellowButton" class="add-to-form-btn" data-product="#24 - Yellow and Black S">Add For Later <div id="yellow-later" class="add-circles"></div></button>
+        <button id="yellowGreenButton" class="add-to-form-btn" data-product="#25 - Gold and Green S">Add For Later <div id="gold-later" class="add-circles"></div></button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="orange hoodie">
+    <figure>
+    <img class="sweat-item" src="images/Sweatsuit Set/orange-s.png" alt="orange hoodie">
+    <figcaption>
+        <p class="description">
+            Orange and white sweatsuit set ~
+            <br>
+            Soft and relaxed fit
+    </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3>#26</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button class="add-to-form-btn-no-padding" data-product="#26 - Orange and White S">Add For Later</button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="green hoodie">
+    <figure>
+    <img class="hoodieImagesGreen" src="images/Sweatsuit Set/green-s.png" alt="green hoodie">
+    <div class="green-hoodies">
+        <button class="green" onclick="switchImage('green')"></button>
+        <button class="armygreen" onclick="switchImage('armygreen')"></button>
+        <button class="green-yellow" onclick="switchImage('green-yellow')"></button>
+        <button class="moss-green" onclick="switchImage('moss-green')"></button>
+    </div>
+    <figcaption>
+        <p class="description" id="greenDescription">
+            Forest green and white sweatsuit set ~
+            <br>
+            Soft and relaxed fit
+    </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3 id="greenNumber">#27</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button id="greenButton" class="add-to-form-btn" data-product="#27 - Forest and White S">Add For Later <div id="forest-later" class="add-circles"></div></button>
+        <button id="armyButton" class="add-to-form-btn" data-product="#28 - Army and White S">Add For Later <div id="army-later" class="add-circles"></div></button>
+        <button id="greenYellowButton" class="add-to-form-btn" data-product="#29 - Green and Gold S">Add For Later <div id="gold-green-later" class="add-circles"></div></button>
+        <button id="mossButton" class="add-to-form-btn" data-product="#30 - Moss and White S">Add For Later <div id="moss-later" class="add-circles"></div></button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="brown hoodie">
+    <figure>
+    <img class="sweat-item" src="images/Sweatsuit Set/brown-s.png" alt="brown hoodie">
+    <figcaption>
+        <p class="description">
+            Brown and white sweatsuit set ~
+            <br>
+            Soft and relaxed fit
+    </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3>#31</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button class="add-to-form-btn-no-padding" data-product="#31 - Brown and White SS">Add For Later</button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="black blue hoodie">
+    <figure>
+    <img class="hoodieImagesBlack" src="images/Sweatsuit Set/black-blue-s.png" alt="black blue hoodie">
+    <div class="black-hoodies">
+        <button class="black-blue" onclick="switchImage('black-blue')"></button>
+        <button class="black-orange" onclick="switchImage('black-orange')"></button>
+        <button class="black-pink" onclick="switchImage('black-pink')"></button>
+    </div>
+    <figcaption>
+        <p class="description" id="blackDescription">
+            Black and blue sweatsuit set ~
+            <br>
+            Soft and relaxed fit
+    </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3 id="blackNumber">#32</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button id="blackButton" class="add-to-form-btn" data-product="#32 - Black and Blue S">Add For Later <div id="black-blue-later" class="add-circles"></div></button>
+        <button id="blackOrangeButton" class="add-to-form-btn" data-product="#33 - Black and Orange S">Add For Later <div id="black-orange-later" class="add-circles"></div></button>
+        <button id="blackPinkButton" class="add-to-form-btn" data-product="#34 - Black and Pink S">Add For Later <div id="black-pink-later" class="add-circles"></div></button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+    </div>
+</div>
+
+<h2 class="alt2">[ALTERNATIVE DESIGNS]</h2>
+
+<div class="sweat-alt-image-column">
+    <div class="item-box" data-name="god hoodie">
+    <figure>
+    <img class="hoodieImagesGod" class="item" src="images/Sweatsuit Set/god-red.png" alt="god hoodie">
+    <div class="god-hoodies">
+    <button class="god-red" onclick="switchImage('god-red')"></button>
+    <button class="god-black" onclick="switchImage('god-black')"></button>
+    <button class="god-orange" onclick="switchImage('god-orange')"></button>
+    <button class="god-brown" onclick="switchImage('god-brown')"></button>
+    </div>
+    <figcaption>
+        <p class="description" id="godDescription">
+            Maroon - "God The Real Plug" sweatsuit set 
+    </p>
+        <br>
+        <br>
+        <p class="sweat-price">$50</p>
+        <br>
+        <br>
+        <h3 id="gNumber">#35</h3>
+        <br>
+        <br>
+        <div class="request-add-buttons">
+            <button id="gButton" class="add-to-form-btn" data-product="#35 - Maroon GTRP S">Add For Later <div id="g-maroon-later" class="add-circles"></div></button>
+            <button id="gBlackButton" class="add-to-form-btn" data-product="#36 - Black GTRP S">Add For Later <div id="g-black-later" class="add-circles"></div></button>
+            <button id="gOrangeButton" class="add-to-form-btn" data-product="#37 - Orange GTRP S">Add For Later <div id="g-orange-later" class="add-circles"></div></button>
+            <button id="gBrownButton" class="add-to-form-btn" data-product="#38 - Brown GTRP S">Add For Later <div id="g-brown-later" class="add-circles"></div></button>
+           <a href="#request-form">
+           <button type="button" class="request-now">Request Now
+                <div class="bouncing-arrow">&#x21e3;</div>
+           </button>
+        </a>
+    </div>
+     </figcaption>
+ </figure>
+</div>
+<div class="item-box" data-name="jesus hoodie">
+    <figure>
+    <img class="hoodieImagesJesus" class="item" src="images/Sweatsuit Set/jesus-purple.png" alt="jesus hoodie">
+    <div class="jesus-hoodies">
+    <button class="jesus-purple" onclick="switchImage('jesus-purple')"></button>
+    <button class="jesus-brown" onclick="switchImage('jesus-brown')"></button>
+    <button class="jesus-grey" onclick="switchImage('jesus-grey')"></button>
+</div>
+    <figcaption>
+        <p class="description" id="jesusDescription">
+            Purple - "Jesus is my connect" sweatsuit set 
+    </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3 id="jNumber">#39</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button id="jButton" class="add-to-form-btn" data-product="#39 - Purple JIMC S">Add For Later <div id="j-purp-later" class="add-circles"></div></button>
+        <button id="jButton" class="add-to-form-btn" data-product="#40 - Brown JIMC S">Add For Later <div id="j-brown-later" class="add-circles"></div></button>
+        <button id="jGreyButton" class="add-to-form-btn" data-product="#41 - Grey JIMC S">Add For Later <div id="j-grey-later" class="add-circles"></div></button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="fly hoodie">
+    <figure>
+    <img class="hoodieImagesFly" src="images/Sweatsuit Set/black-fly.png" alt="fly hoodie">
+    <div class="fly-hoodies">
+    <button class="black-fly" onclick="switchImage('black-fly')"></button>
+    <button class="green-fly" onclick="switchImage('green-fly')"></button>
+</div>
+    <figcaption>
+        <p class="description" id="flyDescription">
+            Black - "Fly High" sweatsuit set 
+    </p>
+       <br>
+       <br>
+       <p class="sweat-price">$50</p>
+       <br>
+       <br>
+       <h3 id="flyNumber">#42</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button id="flyButton" class="add-to-form-btn" data-product="#42 - Black FH S">Add For Later <div id="fly-black-later" class="add-circles"></div></button>
+        <button id="flyGreenButton" class="add-to-form-btn" data-product="#43 - Army Black FH S">Add For Later <div id="fly-army-later" class="add-circles"></div></button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+</figcaption>
+</figure>
+</div>
+</div>
+
+
+<div class="shirt-logos">
+    <img src="images/logo.jpg" alt="logo">
+    <img src="images/logo.jpg" alt="logo">
+</div>
+
+<div class="shirt-shorts-collection">
+    <div class="item-icon">
+        <img class="shorts-icon" src="images/shorts-icon.png" alt="shorts icon">
+    <h2 class="shirt-hatc">SHIRT & SHORTS COLLECTION</h2>
+    <div class="shirt-item-divider"></div>
+    <div class="shirt-image-column">
+        <div class="item-box" data-name="black gold shorts">
+        <figure>
+        <img class="sweat-item" src="images/Sweatsuit Set/black-gold-shorts.png" alt="black gold shorts">
+        <figcaption>
+            <p class="description">
+                Black and Gold - Shirt & Shorts set 
+        </p>
+           <br>
+           <br>
+           <p class="shorts-price">$30</p>
+           <br>
+           <br>
+           <h3>#44</h3>
+           <br>
+           <br>
+           <div class="request-add-buttons">
+            <button class="add-to-form-btn-no-padding" data-product="#44 - Black and Gold SS">Add For Later</button>
+           <a href="#request-form">
+           <button type="button" class="request-now">Request Now
+                <div class="bouncing-arrow">&#x21e3;</div>
+           </button>
+        </a>
+    </div>
+        </figcaption>
+    </figure>
+</div>
+<div class="item-box" data-name="white red shorts">
+    <figure>
+    <img class="sweat-item" src="images/Sweatsuit Set/white-red-shorts.png" alt="white red shorts">
+    <figcaption>
+        <p class="description">
+            White and Red - Shirt & Shorts set 
+    </p>
+       <br>
+       <br>
+       <p class="shorts-price">$30</p>
+       <br>
+       <br>
+       <h3>#45</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button class="add-to-form-btn-no-padding" data-product="#45 - White and Red SS">Add For Later</button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="red shorts">
+    <figure>
+    <img class="sweat-item" src="images/Sweatsuit Set/red-shorts.png" alt="red shorts">
+    <figcaption>
+        <p class="description">
+            Red - Shirt & Shorts set 
+    </p>
+       <br>
+       <br>
+       <p class="shorts-price">$30</p>
+       <br>
+       <br>
+       <h3>#46</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button class="add-to-form-btn-no-padding" data-product="#46 - Red SS">Add For Later</button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="green shorts">
+    <figure>
+    <img class="sweat-item" src="images/Sweatsuit Set/green-shorts.png" alt="green shorts">
+    <figcaption>
+        <p class="description">
+            Lime Green - Shirt & Shorts set 
+    </p>
+       <br>
+       <br>
+       <p class="shorts-price">$30</p>
+       <br>
+       <br>
+       <h3>#47</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button class="add-to-form-btn-no-padding" data-product="#47 - Lime Green SS">Add For Later</button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+<div class="item-box" data-name="purple shorts">
+    <figure>
+    <img class="sweat-item" src="images/Sweatsuit Set/purple-shorts.png" alt="purple shorts">
+    <figcaption>
+        <p class="description">
+            Heather Purple - Shirt & Shorts set 
+    </p>
+       <br>
+       <br>
+       <p class="shorts-price">$30</p>
+       <br>
+       <br>
+       <h3>#48</h3>
+       <br>
+       <br>
+       <div class="request-add-buttons">
+        <button class="add-to-form-btn-no-padding" data-product="#48 - Heather Purple SS">Add For Later</button>
+       <a href="#request-form">
+       <button type="button" class="request-now">Request Now
+            <div class="bouncing-arrow">&#x21e3;</div>
+       </button>
+    </a>
+</div>
+    </figcaption>
+</figure>
+</div>
+</div>
+        
+<div class="item-icon">
+    <img class="custom-icon" src="images/custom-icon.png" alt="custom icon">
+
+<div class="customizables">
+    <h4>CUSTOMIZABLES</h4>
+    <p>Want a customizable item? Fill in the form below and state your request in the 'Additional Comments' section at the very bottom. 
+        <br>
+        <br>
+        Prices may vary depending on number of requests.</p>
+    <div class="custom-container">
+        <div class="custom-section">
+            <h3>KITCHEN ITEMS <span>$12</span></h3>
+            <img src="images/Custom/kitchen-black.png" alt="custom black kitchen set">
+            <img src="images/Custom/kitchen-white.png" alt="custom white kitchen set">
+        </div>
+        <div class="custom-section">
+            <h3>TOWELS <span></span></h3>
+            <img src="images/Custom/towels.png" alt="customo towels">
+        </div>
+        <div class="custom-section">
+            <h3>BAGS</h3>
+            <img id="bags" src="images/Custom/bags.png" alt="custom bags">
+        </div>
+        <div class="custom-section">
+            <h3>CUPS <span>$20</span></h3>
+            <img id="cups" src="images/Custom/cup1.png" alt="custom cup">
+            <img id="cups" src="images/Custom/cup2.png" alt="custom cup">
+            <img id="cups" src="images/Custom/cup3.png" alt="custom cup">
+        </div>
+        <div class="custom-section">
+            <h3>PHONE CASES <span>$15</span></h3>
+            <img id="case" src="images/Custom/case.png" alt="custom phone case">
+        </div>
+        <div class="custom-section">
+            <h3>MOUSE PADS <span>$15</span></h3>
+            <img src="images/Custom/mousepad.png" alt="custom mousepad">
+        </div>
+    </div>
+</div>
+
+<div class="form-container">
+    <form method="post" id="request-form">
+        <p class="form-message">To initiate the purchasing process, please fill out the form below. Please note that once your information is received, Fearless N Focused will contact you shortly to confirm all details of your order. 
+            If you have any specific preferences or questions, feel free to include them in the 'Additional Comments' section at the very bottom of the form and have them addressed during the follow-up conversation through email or phone.
+            Fearless N Focused looks forward to bringing you quality merchandise that aligns with your style and vision. Thank you for your support!</p>
+    
+        <h1>MERCHANDISE REQUEST FORM</h1>
+        <label for="firstNameInput">First Name </label>
+        <input type="text" id="firstNameInput" required>
+        <label for="lastNameInput">Last Name </label>
+        <input type="text" id="lastNameInput" required>
+        <label for="emailInput">Email </label>
+        <input type="email" id="emailInput">
+        <label for="phoneInput">Phone Number </label>
+        <input type="tel" id="phoneInput">
+        <p class="pref">Form Of Contact You Would Prefer:</p>
+        <label for="phone-pref" id="phone-label">Phone</label>
+        <input type="radio" name="contact-pref" id="phone-pref">
+        <label for="email-pref" id="email-label">Email</label>
+        <input type="radio" name="contact-pref" id="email-pref">
+    
+        <div id="selection-form">
+        <label for="product">Select Product Number <span>(Hint: this can be found underneath each product)</span></label>
+        <select name="product[]" id="product">
+            <option value=""></option>
+            <option value="#1 - Green and Gold Hat">#1 - Green and Gold Hat</option>
+            <option value="#2 - Navy and Teal Hat">#2 - Navy and Teal Hat</option>
+            <option value="#3 - Red and Black Hat">#3 - Red and Black Hat</option>
+            <option value="#4 - Black and Red Hat">#4 - Black and Red Hat</option>
+            <option value="#5 - Black and White Hat">#5 - Black and White Hat</option>
+            <option value="#6 - Army Green and Black Hat">#6 - Army Green and Black Hat</option>
+            <option value="#7 - Royal Blue and White Hat">#7 - Royal Blue and White Hat</option>
+            <option value="#8 - Camouflage and White Hat">#8 - Camouflage and White Hat</option>
+            <option value="#9 - Black and Green Hat">#9 - Black and Green Hat</option>
+            <option value="#10 - Jean Blue and Black Hat">#10 - Jean Blue and Black Hat</option>
+
+            <option value="#11 - Gold and Green w/ White Outline Hat">#11 - Gold and Green w/ White Outline Hat</option>
+            <option value="#12 - Red and White w/ Black Outline Hat">#12 - Red and White w/ Black Outline Hat</option>
+            <option value="#13 - Black and Red w/ White Outline Hat">#13 - Black and Red w/ White Outline Hat</option>
+            <option value="#14 - Teal and Purple w/ White Outline Hat">#14 - Teal and Purple w/ White Outline Hat</option>
+            <option value="#15 - Royal Blue and White S">#15 - Royal Blue and White S</option>
+            <option value="#16 - Navy Blue and Red S">#16 - Navy Blue and Red S</option>
+            <option value="#17 - Powder Blue and White S">#17 - Powder Blue and White S</option>
+            <option value="#18 - Red and White S">#18 - Red and White S</option>
+            <option value="#19 - Rust and Gold S">#19 - Rust and Gold S</option>
+            <option value="#20 - Maroon and White S">#20 - Maroon and White S</option>
+
+            <option value="#21 - Grey and White S">#21 - Grey and White S</option>
+            <option value="#22 - Grey and Black S">#22 - Grey and Black S</option>
+            <option value="#23 - Purple and White S">#23 - Purple and White S</option>
+            <option value="#24 - Yellow and Black S">#24 - Yellow and Black S</option>
+            <option value="#25 - Gold and Green S">#25 - Gold and Green S</option>
+            <option value="#26 - Orange and White S">#26 - Orange and White S</option>
+            <option value="#27 - Forest and White S">#27 - Forest and White S</option>
+            <option value="#28 - Army and White S">#28 - Army and White S</option>
+            <option value="#29 - Green and Gold S">#29 - Green and Gold S</option>
+            <option value="#30 - Moss and White S">#30 - Moss and White S</option>
+
+            <option value="#31 - Brown and White S">#31 - Brown and White S</option>
+            <option value="#32 - Black and Blue S">#32 - Black and Blue S</option>
+            <option value="#33 - Black and Orange S">#33 - Black and Orange S</option>
+            <option value="#34 - Black and Pink S">#34 - Black and Pink S</option>
+            <option value="#35 - Maroon GTRP S">#35 - Maroon GTRP S</option>
+            <option value="#36 - Black GTRP S">#36 - Black GTRP S</option>
+            <option value="#37 - Orange GTRP S">#37 - Orange GTRP S</option>
+            <option value="#38 - Brown GTRP S">#38 - Brown GTRP S</option>
+            <option value="#39 - Purple JIMC S">#39 - Purple JIMC S</option>
+            <option value="#40 - Brown JIMC S">#40 - Brown JIMC S</option>
+
+            <option value="#41 - Grey JIMC S">#41 - Grey JIMC S</option>
+            <option value="#42 - Black FH S">#42 - Black FH S</option>
+            <option value="#43 - Army FH S">#43 - Army FH S</option>
+            <option value="#44 - Black and Gold SS">#44 - Black and Gold SS</option>
+            <option value="#45 - White and Red SS">#45 - White and Red SS</option>
+            <option value="#46 - Red SS">#46 - Red SS</option>
+            <option value="#47 - Lime Green SS">#47 - Lime Green SS</option>
+            <option value="#48 - Heather Purple SS">#48 - Heather Purple SS</option>
+
+
+        </select>
+        <label for="size">Select Size</label>
+        <select name="size[]" id="size">
+            <option value=""></option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="2X">2X</option>
+            <option value="3X">3X</option>
+        </select>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" value="1" min="1" max="50">
+        <p class="max">(Max: 50)</p>
+    
+        <button type="button" class="add-btn" id="add-item-btn">Add Item</button>
+    </div>
+    
+    <div id="items-container"></div>
+
+    <input type="hidden" id="hidden-items" name="items">
+    
+    <div class="additional">
+        <label for="add-comments">Additional Comments or Customized Request: </label>
+        <textarea name="add-comments" id="add-comments" rows="8" cols="40"></textarea>
+    </div>
+        <button class="submit-btn" type="submit">Request Merchandise</button>
+
+        
+        <div id="thankYouMessage" style="display: none;">
+        </div>
+    </form>
+    </div>
+    <div class="cancel-container">
+        <a href="cancel.html">Need to cancel a previously requested order? Click here.</a>
+    </div>
+    <div class="merch-mobile-footer-bar">
+        <div class="square">
+            <h3>Have Questions? Contact Us: </h3>
+            <ul class="contact-ul">
+                <li><a href="tel:+1800398778">(443)-205-2595</a></li>
+                <li><a href="mailto:fearlessnfocused410@gmail.com">fearlessnfocused410@gmail.com</a></li>
+                <li><a class="mobile-privacy" href="privacy.html">Privacy Policy</a></li>
+            </ul></div>
+    </div>
+    <footer class="merch-footer-bar">
+        <div class="merch-square"><h1>FEARLESS N FOCUSED</h1></div>
+        <div class="merch-square">
+            <h3>Have Questions? Contact Us: </h3>
+            <ul class="contact-ul">
+                <li><a href="tel:+1800398778">(443)-205-2595</a></li>
+                <li><a href="mailto:fearlessnfocused410@gmail.com">fearlessnfocused410@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="merch-square"> 
+            <ul class="links-ul">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="merch.html">MERCHANDISE COLLECTION</a></li>
+        </ul></div>
+        <div class="merch-square"><a class="privacy" href="privacy.html">Privacy Policy</a></div>
+      </footer>
+
+
+
+
+    
+    <script>
+        function toggleMenu() {
+      const menu = document.querySelector('.nav-menu');
+      const hamburger = document.querySelector('.hamburger');
+      
+      menu.classList.toggle('show'); 
+      hamburger.classList.toggle('active'); 
+  }
+      </script>
+    <script>
+        function filterItems() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let items = document.querySelectorAll('.item-box');
+    
+            items.forEach(item => {
+                let itemName = item.getAttribute('data-name').toLowerCase();
+
+                let searchWords = input.split(" ");
+
+                let matches = searchWords.some(word => itemName.includes(word));
+
+                if (matches) {
+                    item.classList.remove("greyed-out");
+            } else {
+                item.classList.add("greyed-out"); 
+            }
+        });
+        }
+    </script>
+<script>
+    function switchImage(type) {
+
+        var blueHoodieImages = document.querySelectorAll(".hoodieImage");
+
+        var redHoodieImages = document.querySelectorAll(".hoodieImagesRed");
+
+        var greyHoodieImages = document.querySelectorAll(".hoodieImagesGrey");
+
+        var greenHoodieImages = document.querySelectorAll(".hoodieImagesGreen");
+
+        var yellowHoodieImages = document.querySelectorAll(".hoodieImagesYellow");
+
+        var blackHoodieImages = document.querySelectorAll(".hoodieImagesBlack");
+
+        var gHoodieImages = document.querySelectorAll(".hoodieImagesGod");
+
+        var jHoodieImages = document.querySelectorAll(".hoodieImagesJesus");
+
+        var flyHoodieImages = document.querySelectorAll(".hoodieImagesFly");
+
+        var blueDescription = document.getElementById('blueDescription');
+
+        var redDescription = document.getElementById('redDescription');
+
+        var greyDescription = document.getElementById('greyDescription');
+        
+        var yellowDescription = document.getElementById('yellowDescription');
+
+        var greenDescription = document.getElementById('greenDescription');
+
+        var blackDescription = document.getElementById('blackDescription');
+
+        var godDescription = document.getElementById('godDescription');
+
+        var jesusDescription = document.getElementById('jesusDescription');
+
+        var flyDescription = document.getElementById('flyDescription');
+
+        var blueNumber = document.getElementById('blueNumber');
+
+        var redNumber = document.getElementById('redNumber');
+
+        var blueNumber = document.getElementById('blueNumber');
+
+        var greyNumber = document.getElementById('greyNumber');
+
+        var yellowNumber = document.getElementById('yellowNumber');
+
+        var greenNumber = document.getElementById('greenNumber');
+
+        var blackNumber = document.getElementById('blackNumber');
+
+        var gNumber = document.getElementById('gNumber');
+
+        var jNumber = document.getElementById('jNumber');
+
+        var flyNumber = document.getElementById('flyNumber');
+
+        var blueButton = document.getElementById('blueButton');
+
+        var redButton = document.getElementById('redButton');
+
+        var greyButton = document.getElementById('greyButton');
+
+        var yellowButton = document.getElementById('yellowButton');
+
+        var greenButton = document.getElementById('greenButton');
+
+        var blackButton = document.getElementById('blackButton');
+
+        var gButton = document.getElementById('blackButton');
+
+        var jButton = document.getElementById('blackButton');
+
+        var flyButton = document.getElementById('blackButton');
+        
+        if (blueButton) {
+        if (type === 'dark') {
+            buttonId= 'blueButton';
+        } else if (type === 'blue-red') {
+            buttonId= 'navyButton';
+        }
+        else if (type === 'light') {
+            buttonId= 'powderButton';
+        }
+    }
+
+        blueHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'dark') {
+                hoodieImage.src = "images/Sweatsuit Set/blue-s.png";  
+            } else if (type === 'blue-red') {
+                hoodieImage.src = "images/Sweatsuit Set/blue-red.png";  
+
+            } else if (type === 'light') {
+                hoodieImage.src = "images/Sweatsuit Set/lightblue-s.png";  
+            }
+        });
+
+
+    if (blueDescription) {
+        if (type === 'dark') {
+            blueDescription.innerHTML = 'Royal blue and white sweatsuit set ~<br>Soft and relaxed fit';
+        } else if (type === 'blue-red') {
+            blueDescription.innerHTML = 'Navy blue and red sweatsuit set ~<br>Soft and relaxed fit';
+        }
+        else if (type === 'light') {
+            blueDescription.innerHTML = 'Powder blue and white sweatsuit set ~<br>Soft and relaxed fit';
+        }
+    }
+
+    if (blueNumber) {
+        if (type === 'dark') {
+            blueNumber.innerHTML = '#15';
+        } else if (type === 'blue-red') {
+            blueNumber.innerHTML = '#16';
+        }
+        else if (type === 'light') {
+            blueNumber.innerHTML = '#17';
+        }
+    }
+
+        redHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'red') {
+                hoodieImage.src = "images/Sweatsuit Set/red-s.png";  
+            } else if (type === 'wine') {
+                hoodieImage.src = "images/Sweatsuit Set/wine-s.png";  
+        } else if (type === 'red-yellow') {
+                hoodieImage.src = "images/Sweatsuit Set/red-yellow-s.png";  
+            }
+        });
+
+        if (redDescription) {
+        if (type === 'red') {
+            redDescription.innerHTML = 'Red and white sweatsuit set ~<br>Soft and relaxed fit';
+        } else if (type === 'red-yellow') {
+            redDescription.innerHTML = 'Rust red and gold sweatsuit set ~<br>Soft and relaxed fit';
+        }
+        else if (type === 'wine') {
+            redDescription.innerHTML = 'Maroon and white sweatsuit set ~<br>Soft and relaxed fit';
+        }
+    }
+
+    if (redNumber) {
+        if (type === 'red') {
+            redNumber.innerHTML = '#18';
+        } else if (type === 'red-yellow') {
+            redNumber.innerHTML = '#19';
+        }
+        else if (type === 'wine') {
+            redNumber.innerHTML = '#20';
+        }
+    }
+
+    if (redButton) {
+        if (type === 'red') {
+            buttonId= 'redButton';
+        } else if (type === 'red-yellow') {
+            buttonId= 'rustButton';
+        }
+        else if (type === 'wine') {
+            buttonId= 'maroonButton';
+        }
+    }
+
+    
+        greyHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'lightgrey') {
+                hoodieImage.src = "images/Sweatsuit Set/lightgrey-s.png";  
+            } else if (type === 'grey-black') {
+                hoodieImage.src = "images/Sweatsuit Set/grey-black-s.png";  
+            }
+        });
+
+
+        if (greyDescription) {
+        if (type === 'lightgrey') {
+            greyDescription.innerHTML = 'Grey and white sweatsuit set ~<br>Soft and relaxed fit';
+        } else if (type === 'grey-black') {
+            greyDescription.innerHTML = 'Grey and black sweatsuit set ~<br>Soft and relaxed fit';
+        }
+    }
+
+    if (greyNumber) {
+        if (type === 'lightgrey') {
+            greyNumber.innerHTML = '#21';
+        } else if (type === 'grey-black') {
+            greyNumber.innerHTML = '#22';
+        }
+    }
+
+    if (greyButton) {
+        if (type === 'lightgrey') {
+            buttonId= 'greyButton';
+        } else if (type === 'grey-black') {
+            buttonId= 'greyBlackButton';
+        }
+    }
+
+        greenHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'green') {
+                hoodieImage.src = "images/Sweatsuit Set/green-s.png";  
+            } else if (type === 'armygreen') {
+                hoodieImage.src = "images/Sweatsuit Set/armygreen-s.png";  
+        
+        } else if (type === 'green-yellow') {
+                hoodieImage.src = "images/Sweatsuit Set/green-yellow-s.png";  
+        
+        } else if (type === 'moss-green') {
+                hoodieImage.src = "images/Sweatsuit Set/moss-green-s.png";  
+            }
+        });
+
+        if (greenDescription) {
+        if (type === 'green') {
+            greenDescription.innerHTML = 'Forest green and white sweatsuit set ~<br>Soft and relaxed fit';
+        } else if (type === 'armygreen') {
+            greenDescription.innerHTML = 'Army green and white sweatsuit set ~<br>Soft and relaxed fit';
+    } else if (type === 'green-yellow') {
+            greenDescription.innerHTML = 'Green and gold sweatsuit set ~<br>Soft and relaxed fit';
+        
+    } else if (type === 'moss-green') {
+            greenDescription.innerHTML = 'Moss green and white sweatsuit set ~<br>Soft and relaxed fit';
+        }
+    }
+
+
+    if (greenNumber) {
+        if (type === 'green') {
+            greenNumber.innerHTML = '#27';
+        } else if (type === 'armygreen') {
+            greenNumber.innerHTML = '#28';
+    } else if (type === 'green-yellow') {
+        greenNumber.innerHTML = '#29';
+        
+    } else if (type === 'moss-green') {
+        greenNumber.innerHTML = '#30';
+        }
+    }
+
+    if (greenButton) {
+        if (type === 'green') {
+            buttonId= 'greenButton';
+        } else if (type === 'armygreen') {
+            buttonId= 'armyButton';
+        }
+    } else if (type === 'green-yellow') {
+            buttonId= 'greenYellowButton';
+    } else if (type === 'moss-green') {
+            buttonId= 'mossButton';
+        }
+
+
+        yellowHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'yellow') {
+                hoodieImage.src = "images/Sweatsuit Set/yellow-s.png";  
+            } else if (type === 'yellow-green') {
+                hoodieImage.src = "images/Sweatsuit Set/yellow-green.png";  
+            }
+        });
+
+        if (yellowDescription) {
+        if (type === 'yellow') {
+            yellowDescription.innerHTML = 'Yellow and black sweatsuit set ~<br>Soft and relaxed fit';
+        } else if (type === 'yellow-green') {
+            yellowDescription.innerHTML = 'Gold and green sweatsuit set ~<br>Soft and relaxed fit';
+        }
+    }
+
+    if (yellowNumber) {
+        if (type === 'yellow') {
+            yellowNumber.innerHTML = '#24';
+        } else if (type === 'yellow-green') {
+            yellowNumber.innerHTML = '#25';
+        }
+    }
+
+    if (yellowButton) {
+        if (type === 'yellow') {
+            buttonId= 'yellowButton';
+        } else if (type === 'yellow-green') {
+            buttonId= 'yellowGreenButton';
+        }
+    }
+
+        blackHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'black-blue') {
+                hoodieImage.src = "images/Sweatsuit Set/black-blue-s.png";  
+
+            } else if (type === 'black-orange') {
+                hoodieImage.src = "images/Sweatsuit Set/black-orange.png";  
+            } else if (type === 'black-pink') {
+                hoodieImage.src = "images/Sweatsuit Set/black-pink-s.png";  
+            }
+
+        });
+
+        if (blackDescription) {
+        if (type === 'black-blue') {
+            blackDescription.innerHTML = 'Black and blue sweatsuit set ~<br>Soft and relaxed fit';
+        } else if (type === 'black-orange') {
+            blackDescription.innerHTML = 'Black and orange sweatsuit set ~<br>Soft and relaxed fit';
+    } else if (type === 'black-pink') {
+            blackDescription.innerHTML = 'Black and pink sweatsuit set ~<br>Soft and relaxed fit';
+        }
+    }
+
+    if (blackNumber) {
+        if (type === 'black-blue') {
+            blackNumber.innerHTML = '#32';
+        } else if (type === 'black-orange') {
+            blackNumber.innerHTML = '#33';
+    } else if (type === 'black-pink') {
+        blackNumber.innerHTML = '#34';
+        }
+    }
+
+    if (blackButton) {
+        if (type === 'black-blue') {
+            buttonId= 'blackButton';
+        } else if (type === 'black-orange') {
+            buttonId= 'blackOrangeButton';
+        }
+    } else if (type === 'black-pink') {
+            buttonId= 'blackPinkButton';
+    }
+
+        gHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'god-red') {
+                hoodieImage.src = "images/Sweatsuit Set/god-red.png";  
+            } else if (type === 'god-black') {
+                hoodieImage.src = "images/Sweatsuit Set/god-black.png";  
+            
+            } else if (type === 'god-orange') {
+                hoodieImage.src = "images/Sweatsuit Set/god-orange.png";  
+
+            } else if (type === 'god-brown') {
+                hoodieImage.src = "images/Sweatsuit Set/god-brown.png";  
+            }
+        });
+
+        if (godDescription) {
+        if (type === 'god-red') {
+            godDescription.innerHTML = 'Maroon - "God The Real Plug" sweatsuit set';
+        } else if (type === 'god-black') {
+            godDescription.innerHTML = 'Black - "God The Real Plug" sweatsuit set';
+    } else if (type === 'god-orange') {
+        godDescription.innerHTML = 'Orange - "God The Real Plug" sweatsuit set';
+    } else if (type === 'god-brown') {
+        godDescription.innerHTML = 'Brown - "God The Real Plug" sweatsuit set';
+        }
+    } 
+
+
+    if (gNumber) {
+        if (type === 'god-red') {
+            gNumber.innerHTML = '#35';
+        } else if (type === 'god-black') {
+            gNumber.innerHTML = '#36';
+    } else if (type === 'god-orange') {
+        gNumber.innerHTML = '#37';
+    } else if (type === 'god-brown') {
+        gNumber.innerHTML = '#38';
+        }
+    }
+
+
+    if (gButton) {
+        if (type === 'god-red') {
+            buttonId= 'gButton';
+        } else if (type === 'god-black') {
+            buttonId= 'gBlackButton';
+        }
+    } else if (type === 'god-orange') {
+            buttonId= 'gOrangeButton';
+
+} else if (type === 'god-brown') {
+            buttonId= 'gBrownButton';
+    }
+
+        jHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'jesus-purple') {
+                hoodieImage.src = "images/Sweatsuit Set/jesus-purple.png";  
+            } else if (type === 'jesus-brown') {
+                hoodieImage.src = "images/Sweatsuit Set/jesus-brown.png";  
+            
+        } else if (type === 'jesus-grey') {
+                hoodieImage.src = "images/Sweatsuit Set/jesus-grey.png";  
+            }
+        });
+
+
+        if (jesusDescription) {
+        if (type === 'jesus-purple') {
+            jesusDescription.innerHTML = 'Purple - "Jesus is my connect" sweatsuit set';
+        } else if (type === 'jesus-brown') {
+            jesusDescription.innerHTML = 'Brown - "Jesus is my connect" sweatsuit set';
+    } else if (type === 'jesus-grey') {
+        jesusDescription.innerHTML = 'Grey - "Jesus is my connect" sweatsuit set';
+    } 
+}
+
+if (jNumber) {
+        if (type === 'jesus-purple') {
+            jNumber.innerHTML = '#39';
+        } else if (type === 'jesus-brown') {
+            jNumber.innerHTML = '#40';
+    } else if (type === 'jesus-grey') {
+        jNumber.innerHTML = '#41';
+    } 
+}
+
+
+if (jButton) {
+        if (type === 'jesus-purple') {
+            buttonId= 'jButton';
+        } else if (type === 'jesus-brown') {
+            buttonId= 'jBrowButton';
+        }
+    } else if (type === 'jesus-grey') {
+            buttonId= 'jGreyButton';
+    }
+
+
+        flyHoodieImages.forEach(function(hoodieImage) {
+            if (type === 'black-fly') {
+                hoodieImage.src = "images/Sweatsuit Set/black-fly.png";  
+            } else if (type === 'green-fly') {
+                hoodieImage.src = "images/Sweatsuit Set/green-fly.png";  
+            }
+        });
+
+
+        if (flyDescription) {
+        if (type === 'black-fly') {
+            flyDescription.innerHTML = 'Black - "Fly High" sweatsuit set';
+        } else if (type === 'green-fly') {
+            flyDescription.innerHTML = 'Army green - "Fly High" sweatsuit set';
+    } 
+}
+
+if (flyNumber) {
+        if (type === 'black-fly') {
+            flyNumber.innerHTML = '#42';
+        } else if (type === 'green-fly') {
+            flyNumber.innerHTML = '#43';
+    } 
+}
+
+if (flyButton) {
+        if (type === 'black-fly') {
+            buttonId= 'flyButton';
+        } else if (type === 'green-fly') {
+            buttonId= 'flyGreenButton';
+    }
+}
+    }
+</script>
+
+<script>
+    document.getElementById('product').addEventListener('change', function () {
+    var selectedProduct = this.options[this.selectedIndex].text.toLowerCase(); 
+    var sizeSection = document.getElementById('size'); 
+
+    if (selectedProduct.includes('hat')) {
+    sizeSection.disabled = true; 
+    sizeSection.value = ''; 
+} else {
+    sizeSection.disabled = false; 
+}
+});
+
+</script>
+<script>
+    document.querySelectorAll('.add-to-form-btn, .add-to-form-btn-no-padding').forEach(button => {
+        button.addEventListener('click', function () {
+            var productNumber = this.getAttribute('data-product');
+            var modal = document.getElementById('popup-modal');
+            
+            modal.dataset.selectedProduct = productNumber;
+    
+            modal.style.display = 'block';
+        
+            
+            if (productNumber.includes("Hat")) { 
+    document.getElementById('popup-size').disabled = true; 
+    document.getElementById('popup-size').value = ''; 
+} else {
+    document.getElementById('popup-size').disabled = false;
+}
+    });
+    });
+
+    document.querySelector('.close-btn').addEventListener('click', function () {
+        closeAndClearModal();
+    });
+    
+    document.getElementById('confirm-selection').addEventListener('click', function () {
+        var modal = document.getElementById('popup-modal');
+        var productNumber = modal.dataset.selectedProduct;
+        var size = document.getElementById('popup-size').value;
+        var quantity = document.getElementById('popup-quantity').value;
+    
+        if (productNumber.includes("Hat")) {
+        size = 'N/A'; 
+    } else {
+        if (!size) {
+            alert("Please select a size.");
+            return;
+        }
+    }
+
+    var item = {
+        product: productNumber,
+        size: size,
+        quantity: quantity
+    };
+
+    var items = JSON.parse(document.getElementById('hidden-items').value || '[]');
+    items.push(item);
+    document.getElementById('hidden-items').value = JSON.stringify(items);
+        
+        var container = document.getElementById('items-container');
+        var tag = document.createElement('div');
+        tag.classList.add('item-tag');
+        tag.innerHTML = `#${productNumber} (${size}, Qty: ${quantity}) 
+            <button class="remove-btn" onclick="removeTag(this)">×</button>`;
+    
+        container.appendChild(tag);
+
+        showSuccessMessage("Item successfully added to the request form below!");
+    
+        closeAndClearModal();
+    });
+    
+    
+    function removeTag(button, product, size, quantity) {
+    button.parentNode.remove();
+}
+
+    function closeAndClearModal() {
+    var modal = document.getElementById('popup-modal');
+    modal.style.display = 'none';
+
+    document.getElementById('popup-size').value = "";
+    document.getElementById('popup-quantity').value = 1;
+    }
+
+    function showSuccessMessage(message) {
+    var messageBox = document.createElement('div');
+    messageBox.classList.add('success-message');
+    messageBox.innerText = message;
+
+    document.body.appendChild(messageBox);
+
+    setTimeout(() => {
+        messageBox.remove();
+    }, 3000); 
+}
+    </script>
+
+    <script>
+        document.getElementById('add-item-btn').addEventListener('click', function (e) {
+    e.preventDefault(); 
+    
+    var productSelect = document.getElementById('product');
+    var sizeSelect = document.getElementById('size');
+    var quantityInput = document.getElementById('quantity');
+    
+    let productText = productSelect.options[productSelect.selectedIndex].text;
+    let sizeText = productText.toLowerCase().includes('hat') ? 'N/A' : sizeSelect.options[sizeSelect.selectedIndex].text;
+    let quantityText = quantityInput.value;
+    
+    if (!productText.trim()) {
+        alert("Please select a product");
+        return;
+    }
+    
+    if (!sizeText.trim() && !productText.toLowerCase().includes('hat')) {
+        alert("Please select a size");
+        return;
+    }
+    
+    var container = document.getElementById('items-container');
+    var tag = document.createElement('div');
+    tag.classList.add('item-tag');
+    tag.innerHTML = `${productText} (${sizeText}, Qty: ${quantityText}) 
+        <button class="remove-btn" onclick="removeTag(this)">×</button>`;
+    
+    container.appendChild(tag);
+    
+    var items = JSON.parse(document.getElementById('hidden-items').value || '[]');
+    items.push({
+        product: productText,
+        size: sizeText,
+        quantity: quantityText
+    });
+    document.getElementById('hidden-items').value = JSON.stringify(items);
+    
+    productSelect.value = '';
+    sizeSelect.value = '';
+    quantityInput.value = 1;
+    
+});
+
+function removeTag(button) {
+    var itemText = button.parentNode.textContent.trim();
+    
+    button.parentNode.remove();
+    
+    var items = JSON.parse(document.getElementById('hidden-items').value || '[]');
+    items = items.filter(item => {
+        return !`(${item.product} (${item.size}, Qty: ${item.quantity})`.includes(itemText);
+    });
+    document.getElementById('hidden-items').value = JSON.stringify(items);
+}
+
+function showSuccessMessage(message) {
+    var messageBox = document.createElement('div');
+    messageBox.classList.add('success-message');
+    messageBox.innerText = message;
+    document.body.appendChild(messageBox);
+    setTimeout(() => {
+        messageBox.remove();
+    }, 3000);
+}
+    </script>
+
+
+<script>
+    document.getElementById("request-form").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  var productSelect = document.getElementById("product");
+    var sizeSelect = document.getElementById("size");
+    var quantityInput = document.getElementById("quantity");
+
+  let productText = productSelect.options[productSelect.selectedIndex]?.text || "";
+    let sizeText = sizeSelect.options[sizeSelect.selectedIndex]?.text || "";
+    let quantityText = quantityInput.value || 1;
+
+    var items = JSON.parse(document.getElementById("hidden-items").value || "[]");
+
+    if (productText.trim()) {
+        items.push({ product: productText, size: sizeText, quantity: quantityText });
+    }
+
+    document.getElementById("hidden-items").value = JSON.stringify(items);
+
+
+  const formData = {
+    firstName: document.getElementById("firstNameInput").value,
+    lastName: document.getElementById("lastNameInput").value,
+    userEmail: document.getElementById("emailInput").value,
+    phone: document.getElementById("phoneInput").value,
+    contactPref: document.querySelector('input[name="contact-pref"]:checked') ? "Phone" : "Email",
+
+    items: items,
+    comments: document.getElementById("add-comments").value,
+  };
+
+  try {
+    const response = await fetch("http://localhost:3000/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+    if (result.success) {
+
+        document.body.innerHTML = '';
+                
+                const thankYouMessage = document.createElement('div');
+                thankYouMessage.innerHTML = `
+                    <div class="thank-you-container">
+                        <h1>THANK YOU FOR CHOOSING <span>FEARLESS AND FOCUSED!</span></h1>
+                        <br><br>
+                        <h2>Your order means the world to us and we're so excited for you to rock your new gear!
+                        Every piece is designed to inspire confidence and determination — because being fearless and focused is a lifestyle!
+                        <br><br>You should receive a confirmation email and follow-up shortly.
+                        <br><br>Feel free to contact us with any further questions at:
+                        </h2>
+                        <ul>
+                            <li><img class="thank-phone-icon" src="images/phone-icon.png" alt="phone icon"><a href="tel:+1800398778">(443)-205-2595</a></li>
+                            <br>
+                            <li><img class="thank-email-icon" src="images/email-icon.png" alt="email icon"><a href="mailto:fearlessnfocused410@gmail.com">fearlessnfocused410@gmail.com</a></li>
+                        </ul>
+                    </div>
+                `;
+                document.body.appendChild(thankYouMessage);
+    } else {
+      alert("Error submitting request. Please try again.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Failed to submit request.");
+  }
+});
+
+</script>
+</body>
+</html>

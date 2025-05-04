@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <title>Fearless N Focused</title>
+</head>
+<body class="home-background">
+    <button class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="nav-logo">
+    <img class="logo-top" src="images/logo-no-background.png" alt="logo">
+</div>
+<nav class="nav-menu">
+    <div class="nav-left">
+      <a href="index.html">HOME</a>
+    </div>
+    
+    <div class="nav-center">
+      <img src="images/logo-no-background.png" alt="logo" class="nav-logo-img">
+    </div>
+  
+    <div class="nav-right">
+      <a href="merch.html">MERCHANDISE COLLECTION</a>
+    </div>
+  </nav>
+    <header>
+        <h1>FEARLESS N FOCUSED</h1>
+ </header>
+ <p class="slogan">"FEARLESS N FOCUSED, it’s not just a brand or a logo, IT’S A WAY OF LIVIN’"</p>
+ <div class="home-buttons">
+    <a href="merch.html"><button class="request-btn">Request Merchandise</button></a>
+    <a href="privacy.html"><button class="learn-btn">Our Policies</button></a>
+    </div>
+    <div class="mobile-footer-bar">
+        <div class="square">
+            <h3>Have Questions? Contact Us: </h3>
+            <ul class="contact-ul">
+                <li><a href="tel:+1800398778">(443)-205-2595</a></li>
+                <li><a href="mailto:fearlessnfocused410@gmail.com">fearlessnfocused410@gmail.com</a></li>
+                <li><a class="mobile-privacy" href="privacy.html">Privacy Policy</a></li>
+            </ul></div>
+    </div>
+    <footer class="footer-bar">
+        <div class="square"><h1>FEARLESS N FOCUSED</h1></div>
+        <div class="square">
+            <h3>Have Questions? Contact Us: </h3>
+            <ul class="contact-ul">
+                <li><a href="tel:+1800398778">(443)-205-2595</a></li>
+                <li><a href="mailto:fearlessnfocused410@gmail.com">fearlessnfocused410@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="square"> 
+            <ul class="links-ul">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="merch.html">MERCHANDISE COLLECTION</a></li>
+        </ul></div>
+        <div class="square"><a class="privacy-privacy" href="privacy.html">Privacy Policy</a></div>
+      </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    
+    menu.classList.toggle('show'); 
+    hamburger.classList.toggle('active'); 
+}
+    </script>
+</body>
+</html>
