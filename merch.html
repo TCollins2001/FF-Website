@@ -1072,9 +1072,9 @@
         <input type="tel" id="phoneInput">
         <p class="pref">Form Of Contact You Would Prefer:</p>
         <label for="phone-pref" id="phone-label">Phone</label>
-        <input type="radio" name="contact-pref" id="phone-pref">
+        <input type="radio" name="contact-pref" id="phone-pref" value="Phone">
         <label for="email-pref" id="email-label">Email</label>
-        <input type="radio" name="contact-pref" id="email-pref">
+        <input type="radio" name="contact-pref" id="email-pref" value="Email">
     
         <div id="selection-form">
         <label for="product">Select Product Number <span>(Hint: this can be found underneath each product)</span></label>
@@ -1884,7 +1884,7 @@ function showSuccessMessage(message) {
     lastName: document.getElementById("lastNameInput").value,
     userEmail: document.getElementById("emailInput").value,
     phone: document.getElementById("phoneInput").value,
-    contactPref: document.querySelector('input[name="contact-pref"]:checked') ? "Phone" : "Email",
+    contactPref: document.querySelector('input[name="contact-pref"]:checked')?.value,
 
     items: items,
     comments: document.getElementById("add-comments").value,
