@@ -1835,16 +1835,21 @@ if (flyButton) {
 });
 
 function removeTag(button) {
-    var itemText = button.parentNode.textContent.trim();
-    
-    button.parentNode.remove();
-    
-    var items = JSON.parse(document.getElementById('hidden-items').value || '[]');
+    const tag = button.parentNode;
+    const itemText = tag.textContent.trim();
+
+    tag.remove();
+
+    let items = JSON.parse(document.getElementById('hidden-items').value || '[]');
+
     items = items.filter(item => {
-        return !`(${item.product} (${item.size}, Qty: ${item.quantity})`.includes(itemText);
+        const formatted = `${item.product} (${item.size}, Qty: ${item.quantity})`;
+        return formatted !== itemText;
     });
+
     document.getElementById('hidden-items').value = JSON.stringify(items);
 }
+
 
 function showSuccessMessage(message) {
     var messageBox = document.createElement('div');
