@@ -1836,27 +1836,18 @@ if (flyButton) {
 
 function removeTag(button) {
     const tag = button.parentNode;
-
-    const container = document.getElementById('items-container');
-    const hiddenItemsInput = document.getElementById('hidden-items');
-
-    const tagText = tag.textContent.trim();
-    const matches = tagText.match(/#(.+?) \((.+?), Qty: (\d+)\)/);
-    
-    if (matches) {
-        const [_, product, size, quantity] = matches;
-        
-        items = items.filter(item => 
-            !(item.product === product && 
-              item.size === size && 
-              item.quantity === quantity)
-        );
-    
-        hiddenItemsInput.value = JSON.stringify(items);
-    }
-    
+    const itemText = tag.textContent.trim();
 
     tag.remove();
+
+    let items = JSON.parse(document.getElementById('hidden-items').value || '[]');
+
+    items = items.filter(item => {
+        const formatted = `${item.product} (${item.size}, Qty: ${item.quantity})`;
+        return formatted !== itemText;
+    });
+
+    document.getElementById('hidden-items').value = JSON.stringify(items);
 }
 
 
