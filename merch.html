@@ -1835,24 +1835,23 @@ if (flyButton) {
 });
 
 function removeTag(button) {
-    const tag = button.parentNode;
-    const itemText = tag.textContent.trim();
-
-    tag.remove();
-
-    let items = JSON.parse(document.getElementById('hidden-items').value || '[]');
-
-    items = items.filter(item => {
-        const formatted = `${item.product} (${item.size}, Qty: ${item.quantity})`;
-        return formatted !== itemText;
-    });
-
-    document.getElementById('hidden-items').value = JSON.stringify(items);
-
-    console.log("Before removal:", items);
-    console.log("Removing item:", itemText);
-    console.log("After removal:", items);
-
+    try {
+        const tag = button.parentNode;
+        const container = document.getElementById('items-container');
+        
+        const index = Array.from(container.children).indexOf(tag);
+        if (index === -1) return;
+        
+        tag.remove();
+        
+        let items = JSON.parse(document.getElementById('hidden-items').value || '[]');
+        if (!Array.isArray(items)) items = [];
+        
+        items.splice(index, 1);
+        document.getElementById('hidden-items').value = JSON.stringify(items);
+    } catch (error) {
+        console.error("Error removing item:", error);
+    }
 }
 
 
