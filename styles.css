@@ -9754,7 +9754,7 @@ bottom: -1980px;
         font-family: "Metal Mania", serif;
         font-weight: 400;
         font-style: normal;
-        min-height: 900px;
+        min-height: 1200px;
     }
     
     html {
@@ -9851,6 +9851,10 @@ bottom: -1980px;
       .nav-menu a:hover {
         color: gold;
       }
+
+      .circle-pop-up:hover {
+        transform: scale(1.5);
+      }
     
     header {
         border: 8px solid white;
@@ -9921,7 +9925,7 @@ bottom: -1980px;
 
     .footer-bar {
         position: fixed;
-        bottom: 0;
+        bottom: -50px;
         left: 0;
         right: 0;
         height: 200px;            
