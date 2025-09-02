@@ -1603,6 +1603,7 @@ left: 0;
     position: relative;
     top: -20px;
     cursor: pointer;
+    color: black;
 }
 
 .cancel-submit:hover {
@@ -3258,6 +3259,7 @@ left: 0;
         position: relative;
         top: -20px;
         cursor: pointer;
+        color: black;
     }
     
     .cancel-submit:hover {
@@ -4884,6 +4886,7 @@ left: 0;
             position: relative;
             top: -20px;
             cursor: pointer;
+            color: black;
         }
         
         .cancel-submit:hover {
@@ -6507,6 +6510,7 @@ left: 0;
             position: relative;
             top: -20px;
             cursor: pointer;
+            color: black;
         }
         
         .cancel-submit:hover {
@@ -8117,6 +8121,7 @@ left: 0;
             position: relative;
             top: -20px;
             cursor: pointer;
+            color: black;
         }
         
         .cancel-submit:hover {
@@ -9735,6 +9740,7 @@ bottom: -1980px;
     position: relative;
     top: 30px;
     cursor: pointer;
+    color: black;
 }
 
 .cancel-submit:hover {
@@ -11431,6 +11437,7 @@ bottom: -1980px;
             position: relative;
             top: -20px;
             cursor: pointer;
+            color: black;
         }
 
         .cancel-submit:hover {
