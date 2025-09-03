@@ -20,12 +20,12 @@ body, html {
 
 .home-background {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, #FFFFFF 100%);
-    background-size: 1500px;
-    background-repeat: no-repeat;
-    height: 80vh;
+    background-image: url("images/home-image.png");
+    background-size: contain;
+    height: 100%;
     background-color: #FFFFFF;
     margin-top: 60px;
-    background-position: 0px 95px;
+    background-position: center 900px;
 }
 
 .nav-menu {
@@ -97,6 +97,7 @@ body, html {
     top: 8px;
     border: 5px solid gold;
     padding: 5px;
+    background-color: white;
 }
 
 .bar {
@@ -1654,14 +1655,14 @@ left: 0;
         margin: 0;
       }
     
-    .home-background {
+      .home-background {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, #FFFFFF 100%);
-        background-size: 1500px;
-        background-repeat: no-repeat;
-        height: 80vh;
+        background-image: url("images/home-image.png");
+        background-size: contain;
+        height: 100%;
         background-color: #FFFFFF;
         margin-top: 60px;
-        background-position: 0px 95px;
+        background-position: center 900px;
     }
     
     .nav-menu {
@@ -1734,6 +1735,7 @@ left: 0;
         top: 8px;
         border: 5px solid gold;
         padding: 5px;
+        background-color: white;
     }
     
     .bar {
@@ -3290,14 +3292,14 @@ left: 0;
             margin: 0;
           }
         
-        .home-background {
+          .home-background {
             background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, #FFFFFF 100%);
-            background-size: 1500px;
-            background-repeat: no-repeat;
-            height: 80vh;
+            background-image: url("images/home-image.png");
+            background-size: contain;
+            height: 100%;
             background-color: #FFFFFF;
             margin-top: 60px;
-            background-position: 0px 95px;
+            background-position: center 900px;
         }
         
         .nav-menu {
@@ -3370,6 +3372,7 @@ left: 0;
             top: 8px;
             border: 5px solid gold;
             padding: 5px;
+            background-color: white;
         }
         
         .bar {
@@ -4911,15 +4914,15 @@ left: 0;
             padding: 0;
             margin: 0;
           }
-        
-        .home-background {
+
+          .home-background {
             background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, #FFFFFF 100%);
-            background-size: 1500px;
-            background-repeat: no-repeat;
-            height: 80vh;
+            background-image: url("images/home-image.png");
+            background-size: contain;
+            height: 100%;
             background-color: #FFFFFF;
             margin-top: 60px;
-            background-position: 0px 95px;
+            background-position: center 900px;
         }
         
         .nav-menu {
@@ -4992,6 +4995,7 @@ left: 0;
             top: 8px;
             border: 5px solid gold;
             padding: 5px;
+            background-color: white;
         }
         
         .bar {
@@ -6535,14 +6539,14 @@ left: 0;
             margin: 0;
           }
         
-        .home-background {
+          .home-background {
             background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, #FFFFFF 100%);
-            background-size: 1500px;
-            background-repeat: no-repeat;
-            height: 80vh;
+            background-image: url("images/home-image.png");
+            background-size: contain;
+            height: 100%;
             background-color: #FFFFFF;
             margin-top: 60px;
-            background-position: 0px 95px;
+            background-position: center 900px;
         }
         
         .nav-menu {
@@ -6615,6 +6619,7 @@ left: 0;
             top: 8px;
             border: 5px solid gold;
             padding: 5px;
+            background-color: white;
         }
         
         .bar {
@@ -8150,14 +8155,14 @@ left: 0;
     margin: 0;
   }
 
-.home-background {
+  .home-background {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, #FFFFFF 100%);
-    background-size: 1500px;
-    background-repeat: no-repeat;
-    height: 80vh;
+    background-image: url("images/home-image.png");
+    background-size: contain;
+    height: 100%;
     background-color: #FFFFFF;
     margin-top: 60px;
-    background-position: 0px 95px;
+    background-position: center 900px;
 }
 
 .nav-menu {
@@ -8230,6 +8235,7 @@ left: 0;
     top: 8px;
     border: 5px solid gold;
     padding: 5px;
+    background-color: white;
 }
 
 .bar {
@@ -9763,22 +9769,23 @@ bottom: -1980px;
         min-height: 1200px;
     }
     
+    .home-background {
+        background-image: url("images/home-image.png");
+        background-size: contain;
+        background-repeat: repeat;
+        background-color: #FFFFFF;
+        background-position: 0px 95px;
+        height: 100%;
+    }
+    
     html {
         scroll-behavior: smooth;
     }
 
     body, html {
         margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-    }
-    
-    .home-background {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, #FFFFFF 100%);
-        background-repeat: no-repeat;
-        background-color: #FFFFFF;
-        background-position: 0px 95px;
-        height: 100%;
+        padding: 0;
+        box-sizing: border-box;
     }
     
     .nav-menu img {
@@ -9874,15 +9881,14 @@ bottom: -1980px;
         font-size: 70px;
         color: black;
         text-align: center;
-        margin-top: 20px;
         text-shadow: 2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white;
+        margin-top: 20px;
     }
 
     .slogan {
         text-align: center;
         color: white;
         font-size: 25px;
-
     }
 
     .home-buttons {
