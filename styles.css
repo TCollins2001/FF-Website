@@ -4243,7 +4243,7 @@ left: 0;
         
         .shirt-shorts-collection {
             position: relative;
-            top: 3940px;
+            top: 4717px;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -4318,7 +4318,7 @@ left: 0;
         .custom-icon {
             background-color: black;
             position: absolute;
-            top: 6230px;
+            top: 7790px;
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 15px;
@@ -5860,7 +5860,7 @@ left: 0;
 
         .shirt-shorts-collection {
             position: relative;
-            top: 5312px;
+            top: 6090px;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -7480,7 +7480,7 @@ left: 0;
         
         .shirt-shorts-collection {
             position: relative;
-            top: 3968px;
+            top: 4863px;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -7555,7 +7555,7 @@ left: 0;
         .custom-icon {
             background-color: black;
             position: absolute;
-            top: 6230px;
+            top: 7800px;
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 15px;
@@ -10760,11 +10760,20 @@ bottom: -1980px;
     
     .sweat-alt-image-column {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         justify-content: center;
         gap: 50px;
         position: relative;
         top: 990px;
+    }
+
+    .sweat-alt-image-column > div:last-child:nth-child(odd) {
+        grid-column: span 2;
+        justify-self: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .sweat-alt-image-column img {
@@ -10775,7 +10784,7 @@ bottom: -1980px;
 
     .shirt-shorts-collection {
         position: relative;
-        top: 5395px;
+        top: 5870px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -10880,7 +10889,7 @@ bottom: -1980px;
     .custom-icon {
         background-color: black;
         position: absolute;
-        top: 3800px;
+        top: 3850px;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 15px;
