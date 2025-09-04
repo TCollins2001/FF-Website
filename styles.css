@@ -1141,10 +1141,18 @@ padding: 20px;
     height: 180px;
 }
 
-.custom-section {
+.custom-section, .custom-section-shirts {
     border: 5px solid black;
     width: 80%;
     margin: 20px auto;
+}
+
+.cust-divider {
+    border-top: gold 2px solid;
+}
+
+.custom-section-shirts img {
+    padding-top: 40px;
 }
 
 
@@ -2757,13 +2765,19 @@ left: 0;
         height: 180px;
     }
     
-    .custom-section {
+    .custom-section, .custom-section-shirts {
         border: 5px solid black;
         width: 80%;
         margin: 20px auto;
     }
 
+    .cust-divider {
+        border-top: gold 2px solid;
+    }
 
+    .custom-section-shirts img {
+        padding-top: 40px;
+    }
     
     form {
     background-color: gold;
@@ -4390,8 +4404,16 @@ left: 0;
             height: 180px;
         }
         
-        .custom-section {
+        .custom-section, .custom-section-shirts {
             border: 5px solid black;
+        }
+
+        .cust-divider {
+            border-top: gold 2px solid;
+        }
+
+        .custom-section-shirts img {
+            padding-top: 40px;
         }
         
         
@@ -6014,10 +6036,18 @@ left: 0;
             height: 180px;
         }
         
-        .custom-section {
+        .custom-section, .custom-section-shirts {
             border: 5px solid black;
             width: 80%;
             margin: 20px auto;
+        }
+
+        .cust-divider {
+            border-top: gold 2px solid;
+        }
+
+        .custom-section-shirts img {
+            padding-top: 40px;
         }
         
         
@@ -7627,10 +7657,18 @@ left: 0;
             height: 180px;
         }
         
-        .custom-section {
+        .custom-section, .custom-section-shirts {
             border: 5px solid black;
             width: 80%;
             margin: 20px auto;
+        }
+
+        .cust-divider {
+            border-top: gold 2px solid;
+        }
+
+        .custom-section-shirts img {
+            padding-top: 40px;
         }
         
         
@@ -9243,12 +9281,19 @@ padding: 20px;
     height: 180px;
 }
 
-.custom-section {
+.custom-section, .custom-section-shirts {
     border: 5px solid black;
     width: 80%;
     margin: 20px auto;
 }
 
+.cust-divider {
+    border-top: gold 2px solid;
+}
+
+.custom-section-shirts img {
+    padding-top: 40px;
+}
 
 form {
 background-color: gold;
@@ -10960,6 +11005,26 @@ bottom: -1980px;
     
     .custom-section {
         border: 5px solid black;
+    }
+
+    .custom-section h3 {
+        text-align: center;
+    }
+
+    .custom-section-shirts {
+        border: 5px solid black;
+    }
+
+    .custom-section-shirts img {
+        width: 170px;
+        height: 220px;
+        padding-top: 40px;
+        margin-right: 10px;
+        border-radius: 30%;
+    }
+
+    .cust-divider {
+        border-top: gold 2px solid;
     }
 
     form {
