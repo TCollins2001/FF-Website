@@ -3721,13 +3721,13 @@ left: 0;
     border: 5px solid black;
     border-right: none;
     height: 130px;
-    width: 20px;
+    width: 15px;
     }
 
     #featuredTab p {
         position: relative;
         top: 22px;
-        left: 22px;
+        left: 27px;
         font-size: 20px;
     }
 
@@ -3735,6 +3735,7 @@ left: 0;
         visibility: visible;
          position: relative;
          top: -5px;
+         left: 5px;
     }
 
     .hidden-mobile {
@@ -5556,13 +5557,13 @@ left: 0;
     border: 5px solid black;
     border-right: none;
     height: 140px;
-    width: 30px;
+    width: 15px;
     }
 
     #featuredTab p {
         position: relative;
         top: 25px;
-        left: 22px;
+        left: 27px;
         font-size: 23px;
     }
 
@@ -5570,6 +5571,7 @@ left: 0;
         visibility: visible;
          position: relative;
          top: -3px;
+         left: 5px;
     }
 
     .hidden-mobile {
@@ -7392,13 +7394,13 @@ left: 0;
     border: 5px solid black;
     border-right: none;
     height: 140px;
-    width: 30px;
+    width: 15px;
     }
 
     #featuredTab p {
         position: relative;
         top: 25px;
-        left: 22px;
+        left: 27px;
         font-size: 23px;
     }
 
@@ -7406,6 +7408,7 @@ left: 0;
         visibility: visible;
          position: relative;
          top: -3px;
+         left: 5px;
     }
 
     .hidden-mobile {
@@ -9220,13 +9223,13 @@ left: 0;
     border: 5px solid black;
     border-right: none;
     height: 140px;
-    width: 30px;
+    width: 15px;
     }
 
     #featuredTab p {
         position: relative;
         top: 25px;
-        left: 22px;
+        left: 27px;
         font-size: 23px;
     }
 
@@ -9234,6 +9237,7 @@ left: 0;
         visibility: visible;
          position: relative;
          top: -3px;
+         left: 5px;
     }
 
     .hidden-mobile {
