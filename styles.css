@@ -3735,7 +3735,7 @@ left: 0;
         visibility: visible;
          position: relative;
          top: -5px;
-         left: 5px;
+         left: 8px;
     }
 
     .hidden-mobile {
@@ -5571,7 +5571,7 @@ left: 0;
         visibility: visible;
          position: relative;
          top: -3px;
-         left: 5px;
+        left: 8px;
     }
 
     .hidden-mobile {
@@ -7400,7 +7400,7 @@ left: 0;
     #featuredTab p {
         position: relative;
         top: 25px;
-        left: 27px;
+        left: 32px;
         font-size: 23px;
     }
 
@@ -7408,7 +7408,7 @@ left: 0;
         visibility: visible;
          position: relative;
          top: -3px;
-         left: 5px;
+         left: 8px;
     }
 
     .hidden-mobile {
@@ -9229,7 +9229,7 @@ left: 0;
     #featuredTab p {
         position: relative;
         top: 25px;
-        left: 27px;
+        left: 32px;
         font-size: 23px;
     }
 
@@ -9237,7 +9237,7 @@ left: 0;
         visibility: visible;
          position: relative;
          top: -3px;
-         left: 5px;
+         left: 8px;
     }
 
     .hidden-mobile {
