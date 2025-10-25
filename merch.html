@@ -42,6 +42,19 @@
         <input type="text" id="searchBar" placeholder="Search Your Merch!" onkeyup="filterItems()">
     </div>
 </div>
+<div id="featuredTab"><span class="emoji">🔥</span><p>Featured <span class="hidden-mobile">Fits</span></p></div>
+<div id="featuredDrawer">
+<button id="closeDrawer">×</button>
+<h2>Featured Fits</h2>
+<div class="fit-gallery">
+    <img src="images/Custom/cust-yellow2.jpg" alt="example of owner wearing merch">
+    <img src="images/Custom/cust-blue2.jpg" alt="example of owner wearing merch">
+    <img src="images/Featured/IMG_2814.jpg" alt="example of man wearing merch at basketball game">
+    <img src="images/Featured/featured-2.png" alt="example of couple wearing merch">
+    <img src="images/Featured/featured-3.png" alt="example of couple wearing merch">
+    <img src="images/Featured/IMG_2821.jpg" alt="example of man wearing merch at basketball game">
+    </div>
+    </div>
     <div class="logos">
         <img src="images/logo.jpg" alt="logo">
         <img src="images/logo.jpg" alt="logo">
@@ -1175,13 +1188,7 @@
             <img src="images/Custom/cust-s-2.png" alt="custom shirt">
             <img src="images/Custom/cust-s-4.png" alt="custom shirt">
             <img src="images/Custom/cust-s-5.png" alt="custom shirt">
-            <div class="cust-divider"></div>
-            <img src="images/Custom/cust-red.jpg" alt="custom shirt">
-            <img src="images/Custom/cust-red2.jpg" alt="custom shirt">
-            <img src="images/Custom/cust-yellow.jpg" alt="custom shirt">
-            <img src="images/Custom/cust-yellow2.jpg" alt="custom shirt">
-            <img src="images/Custom/cust-blue.jpg" alt="custom shirt">
-            <img src="images/Custom/cust-blue2.jpg" alt="custom shirt">
+            <a class="see-link" href="see-more.html">See More</a>
         </div>
     </div>
 </div>
@@ -1331,7 +1338,13 @@
       </footer>
 
 
-
+<script>
+const tab = document.getElementById('featuredTab');
+const drawer = document.getElementById('featuredDrawer');
+const closeBtn = document.getElementById('closeDrawer');
+tab.addEventListener('click', () => drawer.classList.add('open'));
+closeBtn.addEventListener('click', () => drawer.classList.remove('open'));
+</script>
 
     
     <script>
