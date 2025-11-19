@@ -30,7 +30,7 @@ if (req.method === "OPTIONS") {
 
     const businessEmailCancelData = {
       from: "Fearless N Focused <postmaster@fearlessnfocused.com>",
-      to: "teonvioncollins@gmail.com",
+      to: "fearlessnfocused410@gmail.com",
       subject: "Merchandise Cancellation Request",
         html: `
           <div style="background-color: #EFBF04; color: white; text-align: center; padding: 15px;">
@@ -127,7 +127,7 @@ if (req.method === "OPTIONS") {
   
     const businessEmailData = {
       from: "Fearless N Focused <postmaster@fearlessnfocused.com>",
-      to: "teonvioncollins@gmail.com",
+      to: "fearlessnfocused410@gmail.com",
       subject: "New Merchandise Request Received",
         html: `
           <div style="background-color: #EFBF04; color: white; text-align: center; padding: 15px;">

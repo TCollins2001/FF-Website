@@ -32,7 +32,7 @@ app.post("/send-email", async (req, res) => {
 
   const businessEmailCancelData = {
     from: "Fearless N Focused <postmaster@fearlessnfocused.com>",
-    to: "teonvioncollins@gmail.com",
+    to: "fearlessnfocused410@gmail.com",
     subject: "Merchandise Cancellation Request",
       html: `
         <div style="background-color: #EFBF04; color: white; text-align: center; padding: 15px;">
@@ -129,7 +129,7 @@ app.post("/send-email", async (req, res) => {
 
   const businessEmailData = {
     from: "Fearless N Focused <postmaster@fearlessnfocused.com>",
-    to: "teonvioncollins@gmail.com",
+    to: "fearlessnfocused410@gmail.com",
     subject: "New Merchandise Request Received",
       html: `
         <div style="background-color: #EFBF04; color: white; text-align: center; padding: 15px;">
