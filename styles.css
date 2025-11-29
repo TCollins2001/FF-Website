@@ -33,6 +33,7 @@ body, html {
     border-right: none;
     height: 30px;
     width: 10px;
+     z-index: 9999;
     }
 
     #featuredTab p {
@@ -1875,6 +1876,7 @@ left: 0;
     border-right: none;
     height: 30px;
     width: 10px;
+     z-index: 9999;
     }
 
     #featuredTab p {
@@ -3714,6 +3716,7 @@ left: 0;
     border-right: none;
     height: 130px;
     width: 15px;
+     z-index: 9999;
     }
 
     #featuredTab p {
@@ -5546,6 +5549,7 @@ left: 0;
     border-right: none;
     height: 140px;
     width: 15px;
+     z-index: 9999;
     }
 
     #featuredTab p {
@@ -7379,6 +7383,7 @@ left: 0;
     border-right: none;
     height: 140px;
     width: 15px;
+     z-index: 9999;
     }
 
     #featuredTab p {
@@ -9204,6 +9209,7 @@ left: 0;
     border-right: none;
     height: 140px;
     width: 15px;
+     z-index: 9999;
     }
 
     #featuredTab p {
@@ -11045,6 +11051,7 @@ bottom: -1980px;
     border-right: none;
     width: 10px;
     height: 90px;
+     z-index: 9999;
     }
 
     #featuredTab p {
